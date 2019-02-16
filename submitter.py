@@ -117,14 +117,14 @@ if __name__ == "__main__":
     csrf_key = r.text[idx+17:idx+49]
 
     # Set language and code confidentiality
-    language = lang_choice[sys.argv[1] if len(sys.argv)>1 else 'C++17']
+    language = lang_choice[sys.argv[1] if len(sys.argv)>1 else 'Python 3']
     code_open = 'open'  # 'open', 'close', 'onlyaccepted'
     
     # Read source code from PATH specified in PATH
     if len(sys.argv)>2:
         PATH = sys.argv[2]
     else:
-        PATH = 'main.cpp'
+        PATH = 'main.py'
     with open(PATH,'r') as f:
         source = f.read()
     
