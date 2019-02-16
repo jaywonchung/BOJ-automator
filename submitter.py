@@ -98,8 +98,13 @@ if __name__ == "__main__":
             'next': '/'
         }
         login_response = s.post('https://www.acmicpc.net/signin', data)
+        
+        # Analyze response
         resp_code = login_response.status_code
         print(f'Login: response {resp_code} {resp.get(resp_code, "")}')
+        if login_response.text.find('잘못되었습니다')!=-1:
+            print('Login failed. Wrong username or password!')
+            quit()
 
     # Fetch problem number from sample.txt
     with open('sample.txt', 'r') as f:
@@ -132,7 +137,7 @@ if __name__ == "__main__":
         'csrf_key': csrf_key
     }
     
-    # Submit
+    # Submit and print response
     submit_response = s.post(submit_url, data=data)
     resp_code = submit_response.status_code
     print(f'Submit: response {resp_code} {resp.get(resp_code, "")}')
