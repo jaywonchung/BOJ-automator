@@ -23,9 +23,9 @@
 2. ```submitter.py```를 실행
 3. ```sample.txt```에 쓰여있는 문제 번호를 보고, 자동으로 로그인 후 제출
 
-구체적으로는, 
+구체적으로는 
 ```bash
 python submitter.py 'language' 'source/relative/location'
 ```
 
-과 같이, 첫 번째 인수는 언어 이름, 두 번째 인수는 소스코드의 상대경로를 넣어 실행합니다. 인수 없이 실행하면 기본값은 'Python 3', 'main.py'입니다.
+과 같이 첫 번째 인수는 언어 이름, 두 번째 인수는 소스코드의 상대경로를 넣어 실행합니다. 인수 없이 실행하면 기본값은 'Python 3', 'main.py'입니다.
