@@ -14,6 +14,8 @@
 2. ```sample-io-loader.py``` 실행
 3. ```input.txt```에는 첫 번째 예제입력, ```sample.txt```에는 전체 예제 입력/출력 로드
 
+소스의 기본 빌드커맨드를 ```python main.py < input.txt```로 하면 ```input.txt```의 내용을 ```input()```으로 읽어올 수 있습니다.
+
 ## Motivation #2의 자동화: ```submitter.py```
 
 ![Submitter](images/submittersmall.gif)  
