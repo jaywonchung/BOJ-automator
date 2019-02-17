@@ -29,3 +29,9 @@ python submitter.py 'language' 'source/relative/location'
 ```
 
 과 같이 첫 번째 인수는 언어 이름, 두 번째 인수는 소스코드의 상대경로를 넣어 실행합니다. 인수 없이 실행하면 기본값은 'Python 3', 'main.py'입니다.
+
+# Prerequisites
+
+- Python 3
+- Beautiful Soup: ```pip install bs4```
+- Requests: ```pip install requests```
